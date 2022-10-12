@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple form</title>
+</head>
+<body>
+    <div>
+        <form action="">
+            <fieldset>
+                <!-- for student photo -->
+                <label for=""></label><br>
+                <input type="file">
+                <br>
+                <!-- for student fullname -->
+                <label for="studentName">Student Name: </label>
+                <input type="text" id="studentName" name="studentName" maxlength="20" placeholder="Kulandai Yesu" required>
+                <br>
+                <!-- for father's name -->
+                <label for="fathersName">Father's Name: </label>
+                <input type="text" id="fathersName">
+                <br>
+                <!-- for gender -->
+                <label for="gender"></label>
+
+                <input type="radio" name="gender" id="male" value="male" >
+                <label for="male">Male</label><br>
+
+                <input type="radio" name="gender" id="female" value="female" >
+                <label for="female">Female</label><br>
+
+                <input type="radio" name="gender" id="other" value="other" >
+                <label for="other">other</label><br>
+                
+                <br>
+                <!-- for Date of Brith -->
+                <label for=""></label>
+                <input type="text">
+                <br>
+                <!-- for email -->
+                <label for=""></label>
+                <input type="text">
+                <br>
+                <!-- for Department -->
+                <label for="department">Department:</label>
+                <input type="text" id="department" list="department-list">
+                <datalist id="department-list">
+                    <option value="mech">Mech</option>
+                    <option value="cse">CSE</option>
+                    <option value="eee">EEE</option>
+                    <option value="ece">ECE</option>
+                    <option value="civil">Civil</option>
+                    <option value="others">Others</option>
+                </datalist>
+                <br>
+                <!-- for mobile number -->
+                <label for=""></label>
+                <input type="tel" id="" name="">
+                <br>
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
