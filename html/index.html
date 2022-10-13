@@ -5,61 +5,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>simple form</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script defer sec="../js/script.js"></script>
 </head>
 <body>
-    <div>
-        <form action="">
-            <fieldset>
-                <!-- for student photo -->
-                <label for=""></label><br>
-                <input type="file">
-                <br>
+    <div class="container">
+        <form action="" id="form">
+            <fieldset class="fieldset">
+                <h2>STUDENT DETAILS</h2>
                 <!-- for student fullname -->
-                <label for="studentName">Student Name: </label>
-                <input type="text" id="studentName" name="studentName" maxlength="20" placeholder="Kulandai Yesu" required>
-                <br>
+                <div class="input-control">
+                    <label for="studentName">Student Name: </label><br>
+                    <input type="text" id="studentName" name="studentName">
+                    <div class="error"></div>
+                </div>
                 <!-- for father's name -->
-                <label for="fathersName">Father's Name: </label>
-                <input type="text" id="fathersName">
-                <br>
+                <div class="input-control">
+                    <label for="fathersName">Father's Name: </label><br>
+                    <input type="text" id="fathersName">
+                    <div class="error"></div>
+                </div>
                 <!-- for gender -->
-                <label for="gender"></label>
+                <div class="input-control">
+                    <p>Chosse Gender:</p>
+                    <input type="radio" name="gender" id="male" value="male" >
+                    <label for="male">Male</label><br>
 
-                <input type="radio" name="gender" id="male" value="male" >
-                <label for="male">Male</label><br>
+                    <input type="radio" name="gender" id="female" value="female" >
+                    <label for="female">Fe~male</label><br>
 
-                <input type="radio" name="gender" id="female" value="female" >
-                <label for="female">Female</label><br>
-
-                <input type="radio" name="gender" id="other" value="other" >
-                <label for="other">other</label><br>
-                
-                <br>
+                    <input type="radio" name="gender" id="other" value="other" >
+                    <label for="other">other</label>
+                </div>
                 <!-- for Date of Brith -->
-                <label for=""></label>
-                <input type="text">
-                <br>
+                <div class="input-control">
+                    <label for="DOB">Date Of Brith:</label><br>
+                    <input type="date" id="DOB" name="DOB">
+                    <div class="error"></div>
+                </div>
                 <!-- for email -->
-                <label for=""></label>
-                <input type="text">
-                <br>
+                <div class="input-control">
+                    <label for="email">Enter email:</label><br>
+                    <input type="text" id="email" name="email">
+                    <div class="error"></div>
+                </div>
                 <!-- for Department -->
-                <label for="department">Department:</label>
-                <input type="text" id="department" list="department-list">
-                <datalist id="department-list">
-                    <option value="mech">Mech</option>
-                    <option value="cse">CSE</option>
-                    <option value="eee">EEE</option>
-                    <option value="ece">ECE</option>
-                    <option value="civil">Civil</option>
-                    <option value="others">Others</option>
-                </datalist>
-                <br>
+                <div class="input-control">
+                    <label for="department">Department:</label><br>
+                    <select name="department" id="department">
+                        <option value="choose department">Choose Department</option>
+                        <option value="mech">Mech</option>
+                        <option value="cse">CSE</option>
+                        <option value="eee">EEE</option>
+                        <option value="civil">Civil</option>
+                        <option value="ece">ECE</option>
+                    </select>
+                    <div class="error"></div>
+                </div>
                 <!-- for mobile number -->
-                <label for=""></label>
-                <input type="tel" id="" name="">
-                <br>
-                <button type="submit">Submit</button>
+                <div class="input-control">
+                    <label for="mobileNo">Mobile Number:</label><br>
+                    <input type="tel" id="mobileNo" name="mobileNo">
+                    <div class="error"></div>
+                </div>
+                <!-- for student photo -->
+                <div class="input-control">
+                    <label for="photo">Student Photo:</label><br>
+                    <input type="file" id="photo" name="photo">
+                    <div class="error"></div>
+                </div>
+                <div class="btn">
+                    <button type="submit">Submit</button>
+                </div>
             </fieldset>
         </form>
     </div>
